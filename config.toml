@@ -1,0 +1,51 @@
+baseurl = "localhost"
+languageCode = "en-us"
+Title = "Galleon"
+theme = "potato-dark"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy;2018 Galleon"
+
+[params]
+  paginate = 10
+  # Social accounts. Link to these accounts are displayed in the header and
+  # footer
+  twitter = "Your Twitter username"
+  instagram = "Your Instagram username"
+  github = "Your GitHub username"
+  youtube = "Your YouTube username"
+  # Disqus shortname
+  disqus = ""
+  # Google Analytics API key.
+  ga_api_key = "Your Google Analytics tracking id"
+  # Logo image. This is displayed ogp image.
+  logo = "/images/boot.png"
+  favicon = "/path/to/favicon"
+
+[[menu.main]]
+    name = ""
+    url = "/"
+    weight = 1
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
