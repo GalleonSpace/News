@@ -1,4 +1,4 @@
-baseurl = "localhost"
+baseurl = ""
 languageCode = "en-us"
 Title = "Galleon"
 theme = "potato-dark"
